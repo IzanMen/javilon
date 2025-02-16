@@ -1,0 +1,65 @@
+<section>
+    <h2>Videos</h2>
+    <div>
+        <video src="videos/video1.mp4" controls></video>
+        <video src="videos/video2.mp4" controls></video>
+        <video src="videos/video1.mp4" controls></video>
+        <video src="videos/video2.mp4" controls></video>
+        <video src="videos/video1.mp4" controls></video>
+        <video src="videos/video2.mp4" controls></video>
+        <video src="videos/video1.mp4" controls></video>
+        <video src="videos/video2.mp4" controls></video>
+        <video src="videos/video1.mp4" controls></video>
+        <video src="videos/video2.mp4" controls></video>
+        <video src="videos/video1.mp4" controls></video>
+        <video src="videos/video2.mp4" controls></video>
+        <video src="videos/video1.mp4" controls></video>
+        <video src="videos/video2.mp4" controls></video>
+        <video src="videos/video1.mp4" controls></video>
+        <video src="videos/video2.mp4" controls></video>
+        <video src="videos/video1.mp4" controls></video>
+        <video src="videos/video2.mp4" controls></video>
+        <video src="videos/video1.mp4" controls></video>
+        <video src="videos/video2.mp4" controls></video>
+        <video src="videos/video1.mp4" controls></video>
+        <video src="videos/video2.mp4" controls></video>
+        <video src="videos/video1.mp4" controls></video>
+        <video src="videos/video2.mp4" controls></video>
+        <video src="videos/video1.mp4" controls></video>
+        <video src="videos/video2.mp4" controls></video>    
+    </div>
+</section>
+
+<style>
+    section {
+        margin-top: 100px;
+    }
+
+    section h2 {
+        font-size: 3rem;
+        padding-left: 40px;
+    }
+
+    section div {
+        display: flex;
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    section video {
+        animation: identifier 90s linear;
+        margin-right: 10px;
+
+    }
+
+    @keyframes identifier {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-1000%);
+        }
+    }
+</style>
