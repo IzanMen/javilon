@@ -1,0 +1,47 @@
+---
+import posts from '../utils/posts.json';
+
+const lastPosts = posts.slice(0, 10);
+---
+
+<section>
+    <h2>MIS ÚLTIMAS PUBLICACIONES</h2>
+    <div>
+        {lastPosts.map((post) => (
+            <a href={post.link} target="_blank">
+                <img src={`publicaciones/${post.id}.webp`} alt={`Imagen de la publicación ${post.id}`} />
+            </a>
+        ))}
+    </div>
+</section>
+
+<style>
+    section {
+        margin-top: 100px;
+        position: relative;
+    }
+
+    section h2 {
+        padding: 0 40px;
+        font-size: 3rem;
+    }
+
+    section div {
+        padding: 0 40px;
+        display: grid;
+        gap: 0;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+
+    section div a img{
+        width: 100%;
+        aspect-ratio: 3/4;
+        object-fit: cover;
+    }
+
+    section div a img:hover {
+        transform: scale(1.01);
+        filter: brightness(0.5);
+    }
+</style>

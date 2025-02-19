@@ -45,7 +45,6 @@
             <p>CONTÁCTAME AHORA</p>
         </span>
     </div>
-    <img class="arrow" src="arrow.svg" alt="arrow" />
     <span class="items-contact">
         <a href="https://www.instagram.com/javilondj/">
             <img class="items-contact-instagram" src="instagram.avif" alt="instagram" />
@@ -141,30 +140,6 @@
         }
         100% {
             transform: translateX(0);
-        }
-    }
-
-    .arrow {
-        width: 80px;
-        position: fixed;
-        top: calc(100dvh - 90px);
-        left: 0;
-        right: 0;
-        margin: auto;
-        z-index: 100;
-
-        animation: jump 1s ease-in-out infinite;
-    }
-
-    @keyframes jump {
-        0% {
-            transform: translateY(0);
-        }
-        50% {
-            transform: translateY(-20px);
-        }
-        80% {
-            transform: translateY(0);
         }
     }
 
