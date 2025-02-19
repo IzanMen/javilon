@@ -30,7 +30,7 @@ async function scrapeInstagram(username) {
       });
     });
     
-    return postDetails;
+    return postDetails.reverse();
   });
 
   await browser.close();

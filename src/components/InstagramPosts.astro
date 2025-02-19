@@ -1,7 +1,7 @@
 ---
 import posts from '../utils/posts.json';
 
-const lastPosts = posts.slice(0, 10);
+const lastPosts = posts.slice(0, 10).reverse();
 ---
 
 <section>
@@ -54,6 +54,8 @@ const lastPosts = posts.slice(0, 10);
         section h2 {
             text-align: center;
             font-size: 2rem;
+            line-height: 2rem;
+            margin-bottom: 10px;
         }
     }
 </style>
