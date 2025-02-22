@@ -1,0 +1,64 @@
+<section>
+    <p>He trabajado en EL CLAUSTRE, CASA ANDALUCÍA, SOM SIS,  VIDA UNA Y EL BAR DE TAMARINDOS, así como en eventos privados, ofreciendo siempre un enfoque personalizado para cada ocasión.</p>
+    <div class="logos">
+        <img class="esclaustre" src="logos-trabajos/esclaustre.png" alt="esclaustre" />
+        <img class="casaandalucia" src="logos-trabajos/casaandalucia.png" alt="casa-andalucia" />
+        <img class="somsis" src="logos-trabajos/somsis.png" alt="som-sis" />
+        <img class="vidauna" src="logos-trabajos/vidauna.png" alt="vida-una" />
+        <img class="tamarindos" src="logos-trabajos/tamarindos.png" alt="bar-de-tamarindos" />
+    </div>
+</section>
+
+<style>
+    section {
+        padding: 20px;
+        margin-top: 50px;
+        padding-bottom: 0;
+    }
+
+    section p {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .logos {
+        display: grid;
+        grid-template-areas: 
+        'esclaustre vidauna tamarindos'
+        'casaandalucia vidauna somsis';
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px;
+        margin-top: 50px;
+        height: 400px;
+        width: 1100px;
+    }
+
+    .logos img {
+        width: 100%;
+    }
+
+    .esclaustre {
+        grid-area: esclaustre;
+    }
+
+    .casaandalucia {
+        grid-area: casaandalucia;
+    }
+
+    .somsis {
+        grid-area: somsis;
+        height: 150px;
+        object-fit: contain;
+    }
+
+    .vidauna {
+        grid-area: vidauna;
+        height: 230px;
+        object-fit: contain;
+    }
+
+    .tamarindos {
+        grid-area: tamarindos;
+    }
+</style>
