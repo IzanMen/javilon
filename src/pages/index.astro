@@ -3,14 +3,34 @@ import Header from '../components/Header.astro';
 import Carteles from '../components/Carteles.astro';
 import Videos from '../components/Videos.astro';
 import Layout from '../layouts/Layout.astro';
-import InstagramPosts from '../components/InstagramPosts.astro';
 import Footer from '../components/Footer.astro';
 ---
 
 <Layout>
 	<Header />
+	<section>
+		<h2>DJ JAVILON</h2>
+		<p>Mi nombre artístico es DJ Javilon y no concibo una fiesta sin una buena música que haga vibrar a la gente. Mis influencias van desde el Funk, Soul y Rock, hasta la Disco y Electrónica, lo que me permite mezclar diferentes estilos y mantener la energía siempre al máximo.  
+		 <p>Lo que más me gusta es conseguir que la gente no pare de bailar durante toda la sesión, adaptándome siempre al ambiente y al tipo de público. También me encanta ambientar momentos más relajados, donde la música solo sea un toque que acompañe el momento.</p>
+		<p>Me adapto a lo que la fiesta pida y me aseguro de que siempre se disfrute al máximo.</p>	
+	</section>
 	<Carteles />
 	<Videos />
-	<InstagramPosts />
 	<Footer />
 </Layout>
+
+<style>
+	section {
+		padding: 20px;
+		margin-top: 50px;
+	}
+
+	section h2 {
+		font-size: 3rem;
+	}
+
+	section p {
+		font-size: 1.2rem;
+		margin-bottom: 10px;
+	}
+</style>
